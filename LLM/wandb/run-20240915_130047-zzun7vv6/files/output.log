@@ -1,0 +1,53 @@
+  0%|          | 0/46 [00:00<?, ?it/s]C:\Users\ROG\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\bitsandbytes\nn\modules.py:224: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_type=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(f'Input type into Linear4bit is torch.float16, but bnb_4bit_compute_type=torch.float32 (default). This will lead to slow inference or training speed.')
+
+
+
+
+
+
+
+
+
+ 22%|██▏       | 10/46 [1:15:49<4:20:43, 434.56s/it]
+
+
+
+
+
+
+
+
+
+
+ 43%|████▎     | 20/46 [2:27:43<3:06:57, 431.44s/it]
+
+
+
+
+
+
+
+
+
+
+ 65%|██████▌   | 30/46 [3:43:50<2:06:47, 475.47s/it]
+
+
+
+
+
+
+
+
+
+ 85%|████████▍ | 39/46 [4:57:20<53:23, 457.62s/it]
+
+
+
+
+
+
+
+100%|██████████| 46/46 [5:48:19<00:00, 454.33s/it]
+{'train_runtime': 20904.781, 'train_samples_per_second': 0.018, 'train_steps_per_second': 0.002, 'train_loss': 3.8438535565915317, 'epoch': 0.98}

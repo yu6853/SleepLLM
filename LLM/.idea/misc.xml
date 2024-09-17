@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.11" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="172.16.75.194" id="e3db88b0-f74b-4de8-a8ee-d6ae2c6ff30b" port="22" nameFormat="DESCRIPTIVE" username="sq" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
