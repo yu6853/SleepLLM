@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../static/css/upload.css">
+    
+</head>
+<body>
+    <section class="questionnaire">
+        <div class="headline">调查问卷</div>
+        <div class="question 1">
+            <div class="subheadline">01 职业</div>
+            <select id="profession">
+                <option value="none" selected disabled hidden>请选择您的职业</option>
+                <option value="软件工程师">软件工程师</option>
+                <option value="医生">医生</option>
+                <option value="销售代表">销售代表</option>
+                <option value="教师">教师</option>
+                <option value="护士">护士</option>
+                <option value="工程师">工程师</option>
+                <option value="会计师">会计师</option>
+                <option value="科学家">科学家</option>
+                <option value="律师">律师</option>
+                <option value="销售员">销售员</option>
+                <option value="经理">经理</option>
+                <option value="">其他</option>
+            </select>
+        </div>
+        <div class="question 2">
+            <div class="subheadline">02 性别</div>
+            <select id="gender">
+                <option value="none" selected disabled hidden>请选择您的性别</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+        <div class="question 3">
+            <div class="subheadline">03 年龄</div>
+            <input id="age" type="text" placeholder="请输入您的年龄">
+        </div>
+        <div class="question 4">
+            <div class="subheadline">04 您对自己的睡眠质量满意程度</div>
+            <input type="range" id="sleep_quality" value="5" min="0" max="10" step="1" onchange="changeSVal()">
+            <div class="range_label">111</div>
+        </div>
+        <div class="question 5">
+            <div class="subheadline">05 您在生活中感到的压力程度</div>
+            <input type="range" id="pressure_extent" value="5" min="0" max="10" step="1" onchange="changePVal()">
+            <div class="range_label">111</div>
+        </div>
+        <div class="question 6">
+            <div class="subheadline">06 您的日平均步数</div>
+            <input id="step" type="text">
+        </div>
+        <div class="question 7">
+            <div class="subheadline">07 您是否遇到了睡眠障碍</div>
+            <select id="disorder">
+                <option value="无">无</option>
+                <option value="睡眠呼吸暂停">睡眠呼吸暂停</option>
+                <option value="失眠">失眠</option>
+                <option value="">其他</option>
+            </select>
+        </div>
+        <div class="question 8">
+            <div class="subheadline">08 睡眠数据文件上传</div>
+            <input id="file" type="file" name="file">
+        </div>
+        <div class="submit">
+            <input id="submit" type="submit" value="提交">
+        </div>
+    </section>
+    <script src="../static/js/upload.js"></script>
+</body>
+</html>

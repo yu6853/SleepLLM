@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: rgb(41, 13, 153);
+    color: rgba(245, 245, 245, 0.918);
+}
+.questionnaire {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 800px;
+}
+.questionnaire .headline {
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+    background: url('../imgs/bgcolor0.png');
+}
+.questionnaire .question .subheadline {
+    font-size: large;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+.questionnaire .question {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: url("../imgs/bgcolor0.png");
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.question:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.questionnaire .submit {
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 160px;
+    text-align: center;
+    background: url('../imgs/bgcolor0.png');
+}
+.range_label {
+    display: inline-block;
+}
+/* 这里不考虑浏览器的兼容性 */
+input[type="range"] {
+    width: 50%;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #00c3ffc3, white 50%, white);
+    background-size: 100% 100%;
+}
+/* -webkit-slider-thumb仅对谷歌浏览器有效 */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #aaa;
+    width: 6%;
+    height: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #666;
+}
+input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 55px;    
+    padding: 10px;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(14, 211, 241, 0.784);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+select, input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    width: 200px;
+}
+/* 美化选项内容 */
+option {
+    padding: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+

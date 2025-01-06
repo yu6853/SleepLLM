@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background-color: rgba(28, 38, 176, 0.81);
+    color: whitesmoke;
+}
+body header {
+    height: 85px;
+    width: 100%;
+    line-height: 85px;
+    background-color: rgba(16, 26, 171, 0.729);
+}
+body header h1 {
+    margin: 0;
+    margin-left: 10px;
+}
+body section {
+    margin-left: 10px;
+}
+.mainbox {
+    display: flex;
+}
+.mainbox .column {
+    margin: 20px;
+    flex: 1;
+}
+.databar {
+    display: flex;
+    flex-direction: row;
+}
+.databar .data {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.databar .data .num {
+    position: absolute;
+    height: 104px;
+    width: 100%;
+    text-align: center;
+    line-height: 104px;
+    font-size: large;
+}
+.databar .data .text {
+    position: absolute;
+    height: 56px;
+    width: 100%;
+    text-align: center;
+    line-height: 56px;
+    font-size: large;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+}
+.statistic .data .text {
+    background-color: rgba(14, 211, 241, 0.784);
+    bottom: 0;
+}
+.statistic .data {
+    border: 3px solid rgba(14, 211, 241, 0.784);
+}
+.warnning .data .text {
+    background-color: rgba(255, 166, 0, 0.726);
+    bottom: 0;
+}
+.warnning .data {
+    border: 3px solid rgba(255, 166, 0, 0.726);
+}
+.heartbeat .data .num,  .breath .data .num, .index .data .num{
+    bottom: 0;
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+    /* 对应纵向滚动条的宽度 */
+    width: 12px;
+    /* 对应横向滚动条的宽度 */
+    height: 12px;
+}
+
+.chatbox .chat-input textarea::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    border-radius: 32px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+    background-color: #dbeffd;
+}
+
+.chatbox .chat-display::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+.chatbox .chat-input textarea::-webkit-scrollbar-track {
+    border-radius: 6px;
+}

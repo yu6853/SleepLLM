@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>睡眠监测可视化分析</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="stylesheet" href="../static/css/chatbox.css">
+        <script src="../static/js/echarts.js"></script>
+        <script src="../static/js/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>睡眠监测可视化分析</h1>
+            <script src="../static/js/gradeRating.js"></script>
+            <script src="../static/js/heartbeat.js"></script>
+            <script src="../static/js/breath.js"></script>
+            <script src="../static/js/filldata.js"></script>
+            <script src="../static/js/getalldata.js"></script>
+            <script src="../static/js/marked.min.js"></script>
+        </header>
+
+        <section class="mainbox">
+            <div class="column">
+                <div class="panel index">
+                    <h2>香睡指数</h2>
+                    <div class="databar">
+                        <div id="gradeRating" style="width: 270px;height:200px;">
+                        </div>
+                        <div class="data 1">
+                            <div class="text">睡眠时间</div>
+                            <div class="num sleep_beg_ed"></div>
+                        </div>
+                        <div class="data 2">
+                            <div class="text">睡眠总时长</div>
+                            <div class="num onbed_duration"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel statistic">
+                    <h2>数据统计</h2>
+                    <div class="databar 1">
+                        <div class="data 1">
+                            <div class="num onbed_duration"></div>
+                            <div class="text">在床时间</div>
+                        </div>
+                        <div class="data 2">
+                            <div class="num sleep_duration"></div>
+                            <div class="text">深睡时长</div>
+                        </div>
+                        <div class="data 3">
+                            <div class="num action_num"></div>
+                            <div class="text">体动次数</div>
+                        </div>    
+                    </div>
+                    <div class="databar 2">
+                        <div class="data 4">
+                            <div class="num snore_num"></div>
+                            <div class="text">打鼾次数</div>
+                        </div>
+                        <div class="data 5">
+                            <div class="num leave_num"></div>
+                            <div class="text">离床次数</div>
+                        </div>
+                        <div class="data 6">
+                            <div class="num apnoea_num"></div>
+                            <div class="text">呼吸暂停</div>
+                        </div>    
+                    </div>
+                    <div class="databar 3">
+                        <div class="data 7">
+                            <div class="num avg_breath_rate"></div>
+                            <div class="text">平均呼吸率</div>
+                        </div>
+                        <div class="data 8">
+                            <div class="num avg_heartbeat_rate"></div>
+                            <div class="text">平均心率</div>
+                        </div>
+                        <div class="data 9">
+                            <div class="num sleep_efficency"></div>
+                            <div class="text">睡眠效率</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel warnning">
+                    <h2>预警统计</h2>
+                    <div class="databar 1">
+                        <div class="data 1">
+                            <div class="num">
+                                0
+                            </div>
+                            <div class="text">
+                                短信预警次数
+                            </div>
+                        </div>
+                        <div class="data 2">
+                            <div class="num">
+                                0
+                            </div>
+                            <div class="text">
+                                电话预警次数
+                            </div>
+                        </div>
+                        <div class="data 3">
+                            <div class="num">
+                                0
+                            </div>
+                            <div class="text">
+                                紧急求助次数
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="panel heartbeat">
+                    <h2>心率分析</h2>
+                    <div class="databar">
+                        <div id="heartbeat" style="margin-top: 10px;width: 670px;height:250px;"></div>
+                    </div>
+                </div>
+
+                <div class="panel breath">
+                    <h2>呼吸率分析</h2>   
+                    <div class="databar">
+                        <div id="breath" style="margin-top: 10px;width: 670px;height:250px;"></div>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chatbox">
+            <h2 style="margin: 20px;">ChatGLM4</h2>
+            <div class="chat-container">
+                <div class="chat-display">
+
+                </div>
+                <div class="chat-input">
+                    <textarea id="message-input" placeholder="请输入内容"></textarea>
+                    <button id="submit-btn">发送</button>
+                </div>
+            </div>
+            <script src="../static/js/chatboxDesign.js"></script>
+            <script src="../static/js/initparas.js"></script>
+            <script src="../static/js/addlisteners.js"></script>
+        </section>
+    </body>
+</html>

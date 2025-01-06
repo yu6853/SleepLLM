@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: rgba(28, 38, 176, 0.81);
+    color: whitesmoke;
+}
+body header {
+    height: 85px;
+    width: 100%;
+    line-height: 85px;
+    background-color: rgba(16, 26, 171, 0.729);
+}
+body header h1 {
+    margin: 0;
+    margin-left: 10px;
+}
+.login {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+input[type="submit"] {
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 55px;    
+    padding: 10px;
+    color: #fff;
+    background-color: #64a9d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
